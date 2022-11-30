@@ -1,0 +1,266 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Pacifico&family=Roboto:wght@100&display=swap');
+
+/* Predefined colors, fonts collections */
+:root {
+  --clr-gradient-first: #0096c7;
+  --clr-gradient-second: #006d77;
+  --clr-gradient-third: #231942;
+  --bgclr-primary: #000814;
+  --bgclr-secondary: white;
+
+  --clr-bright: rgb(228, 217, 217);
+
+  --fs-title: 1.3rem;
+
+  --fw-regular-200: 200;
+
+  --ff-attention: 'Pacifico', cursive;
+  --ff-thin: 'Roboto', sans-serif;
+
+  --ff-accent: 'Source Sans Pro', sans-serif;
+  --ff-base: 'Julius Sans One', sans-serif;
+  --ff-inter: 'Inter', sans-serif;
+  ;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--ff-thin);
+
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Nav styles */
+
+.nav--container ul {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  padding: 5px;
+  background-color: var(--bgclr-primary);
+}
+
+.nav--container li {
+  color: var(--clr-bright);
+  font-family: var(--ff-thin);
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.nav--container li:hover {
+  cursor: pointer;
+  color: white;
+}
+
+
+/* Home page styles */
+.intro--container {
+  background-color: var(--bgclr-primary);
+  color: var(--clr-bright);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 60px;
+}
+
+.whoamI{
+  padding: 90px;
+  text-align: justify;
+}
+
+.greet-title--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greet {
+  font-family: var(--ff-attention);
+  font-size: 40px;
+  background-clip: unset;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(43deg, var(--clr-gradient-first) 5%, var(--clr-gradient-second) 30%, var(--clr-gradient-third) 75%);
+  color: transparent;
+}
+
+.newline {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--ff-thin);
+}
+
+.intro--projects {
+  font-family: var(--ff-thin);
+  color: var(--bgclr-primary);
+  background-color: var(--clr-bright);
+  border-radius: 6px;
+  border: none;
+  padding: 2px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.technologies--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 150px;
+}
+
+.technologies--container {
+  cursor: pointer;
+}
+
+.technologies--container h3,
+.section--title {
+  font-family: var(--ff-thin);
+  text-transform: uppercase;
+  font-size: var(--fs-title);
+}
+
+.section--title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tech-img--container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.slider {
+  padding: 30px;
+  background-color: #81b29a30;
+}
+
+.slider--image {
+  height: 220px;
+  width: 400px;
+}
+
+/* Footer styles */
+.footer--container {
+  background-color: var(--bgclr-primary);
+  color: var(--clr-bright);
+  font-family: var(--ff-thin);
+  text-transform: uppercase;
+}
+
+.copyright {
+  font-family: var(--ff-thin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 2px;
+}
+
+.copyright h5 {
+  text-transform: uppercase;
+}
+
+.sitemap-contact--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.sitemap ul {
+  list-style-type: none;
+  font-size: 0.75rem;
+}
+
+.sitemap li:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.contact--container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.reach--container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reach {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reach:hover {
+  cursor: pointer;
+  color: white;
+}
+
+@media(min-width:850px) {
+  .sitemap-contact--container {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
