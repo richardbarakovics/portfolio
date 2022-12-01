@@ -13,9 +13,9 @@ export default function Home() {
             <main className="intro--container">
                 <div className="greet-title--container">
                     <h1 className="greet"><span className="newline">Hi,</span> I am Rick</h1>
-                    <h4 className="title">front-end developer</h4>
+                    {/* <h4 className="title">front-end developer</h4> */}
                 </div>
-                <button className="intro--projects">projects</button>
+                {/* <button className="intro--projects">projects</button> */}
             </main>
             <section className="whoamI">
                 <h3 className="section--title">About me</h3>
