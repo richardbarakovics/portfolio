@@ -29,12 +29,12 @@ export default function Home() {
             <section className="technologies--container">
                 <h3>Technologies</h3>
                 <section className="tech-img--container">
-                    <img src={bootstrapImg} alt="bootstrap" width="55px" />
-                    <img src={cssImg} alt="css" width="55px" />
-                    <img src={gitImg} alt="git" width="55px" />
                     <img src={htmlImg} alt="html" width="55px" />
+                    <img src={cssImg} alt="css" width="55px" />
                     <img src={javascriptImg} alt="javascript" width="55px" />
                     <img src={reactImg} alt="react" width="55px" />
+                    <img src={gitImg} alt="git" width="55px" />
+                    <img src={bootstrapImg} alt="bootstrap" width="55px" />
                 </section>
             </section>
         </>
