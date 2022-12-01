@@ -106,7 +106,7 @@ h6 {
 
 /* Home page styles */
 .intro--container {
-  background-color: var(--bgclr-primary);
+  background-color: white;
   color: var(--clr-bright);
   display: flex;
   flex-direction: column;
@@ -115,7 +115,7 @@ h6 {
   padding: 60px;
 }
 
-.whoamI{
+.whoamI {
   padding: 90px;
   text-align: justify;
 }
@@ -131,7 +131,7 @@ h6 {
   font-size: 70px;
   background-clip: unset;
   -webkit-background-clip: text;
-  background-image: linear-gradient(43deg, var(--clr-gradient-first) 0%, var(--clr-gradient-second) 30%, var(--clr-gradient-third) 61%);
+  background-image: linear-gradient(90deg, var(--clr-gradient-first) 0%, var(--clr-gradient-second) 30%, var(--clr-gradient-third) 95%);
   color: transparent;
 }
 
@@ -183,7 +183,7 @@ h6 {
   flex-wrap: wrap;
 }
 
-.tech-img--container img{
+.tech-img--container img {
   cursor: pointer;
 }
 
@@ -192,13 +192,50 @@ h6 {
   background-color: #81b29a30;
 }
 
+.backgr--img {
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .slider--image-1 {
-  background: url("./images/screenshots/screenshot-1.png") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-   background-size: cover;
+  background-image: url("./images/screenshots/screenshot-1.png");
+}
+
+.slider--image-2 {
+  background-image: url("./images/screenshots/screenshot-2.png");
+}
+
+.slider--image-3 {
+  background-image: url("./images/screenshots/screenshot-3.png");
+}
+
+.slider--image-4 {
+  background-image: url("./images/screenshots/screenshot-4.png");
+}
+
+.slider--image-5 {
+  background-image: url("./images/screenshots/screenshot-5.png");
+}
+
+.slider--image-6 {
+  background-image: url("./images/screenshots/screenshot-6.png");
+}
+
+.slider--image-7 {
+  background-image: url("./images/screenshots/screenshot-7.png");
+}
+
+.slider--image-8 {
+  background-image: url("./images/screenshots/screenshot-8.png");
+}
+
+.slider--image-9 {
+  background-image: url("./images/screenshots/screenshot-9.png");
+}
+
+.slider--image-10 {
+  background-image: url("./images/screenshots/screenshot-10.png");
 }
 
 /* Footer styles */

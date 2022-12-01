@@ -20,7 +20,7 @@ export default function Home() {
             <section className="whoamI">
                 <h3 className="section--title">About me</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    I am a front-end developer with a passion to build UI’s that makes people want to bite into it. I am working based on my own designs. Currently, I am developing only hobby projects, while I am trying to simulate the workflow as it was a professional environment. I am also up-to-date on the latest version of the technologies I am using. I am looking forward to join a developer team where I will be able to learn more efficiently, while I could add value to the team as well.
                 </p>
             </section>
             <div className="slider">
