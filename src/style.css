@@ -164,10 +164,6 @@ h6 {
   padding: 150px;
 }
 
-.technologies--container {
-  cursor: pointer;
-}
-
 .technologies--container h3,
 .section--title {
   font-family: var(--ff-thin);
@@ -185,6 +181,10 @@ h6 {
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
+}
+
+.tech-img--container img{
+  cursor: pointer;
 }
 
 .slider {
