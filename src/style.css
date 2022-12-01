@@ -192,9 +192,13 @@ h6 {
   background-color: #81b29a30;
 }
 
-.slider--image {
-  height: 220px;
-  width: 400px;
+.slider--image-1 {
+  background: url("./images/screenshots/screenshot-1.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+   background-size: cover;
 }
 
 /* Footer styles */

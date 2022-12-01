@@ -26,35 +26,25 @@ export default class MultipleItems extends Component {
             <div>
                 <h3 className="section--title">Projects</h3>
                 <Slider {...settings}>
-                    <div>
-                        <img src={screeshot1} alt="" className="slider--image" />
+                    <div className="slider--image-1">
                     </div>
-                    <div>
-                        <img src={screeshot2} alt="" className="slider--image" />
+                    <div className="slider--image-2">
                     </div>
-                    <div>
-                        <img src={screeshot3} alt="" className="slider--image" />
+                    <div className="slider--image-3">
                     </div>
-                    <div>
-                        <img src={screeshot4} alt="" className="slider--image" />
+                    <div className="slider--image">
                     </div>
-                    <div>
-                        <img src={screeshot5} alt="" className="slider--image" />
+                    <div className="slider--image">
                     </div>
-                    <div>
-                        <img src={screeshot6} alt="" className="slider--image" />
+                    <div className="slider--image">
                     </div>
-                    <div>
-                        <img src={screeshot7} alt="" className="slider--image" />
+                    <div className="slider--image">
                     </div>
-                    <div>
-                        <img src={screeshot8} alt="" className="slider--image" />
+                    <div className="slider--image">
                     </div>
-                    <div>
-                        <img src={screeshot9} alt="" className="slider--image" />
+                    <div className="slider--image">
                     </div>
-                    <div>
-                        <img src={screeshot10} alt="" className="slider--image" />
+                    <div className="slider--image">
                     </div>
                 </Slider>
             </div>
