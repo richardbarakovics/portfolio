@@ -83,6 +83,7 @@ h6 {
 
 /* Nav styles */
 
+
 .nav--container ul {
   display: flex;
   justify-content: center;
@@ -188,55 +189,22 @@ h6 {
   cursor: pointer;
 }
 
+/* adding spaces to slick between */
+.slick-slide>div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+/* adding spaces to slick between */
+
 .slider {
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 31px;
   background-color: #81b29a30;
-}
-
-.backgr--img {
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.slider--image-1 {
-  background-image: url("./images/screenshots/screenshot-1.png");
-}
-
-.slider--image-2 {
-  background-image: url("./images/screenshots/screenshot-2.png");
-}
-
-.slider--image-3 {
-  background-image: url("./images/screenshots/screenshot-3.png");
-}
-
-.slider--image-4 {
-  background-image: url("./images/screenshots/screenshot-4.png");
-}
-
-.slider--image-5 {
-  background-image: url("./images/screenshots/screenshot-5.png");
-}
-
-.slider--image-6 {
-  background-image: url("./images/screenshots/screenshot-6.png");
-}
-
-.slider--image-7 {
-  background-image: url("./images/screenshots/screenshot-7.png");
-}
-
-.slider--image-8 {
-  background-image: url("./images/screenshots/screenshot-8.png");
-}
-
-.slider--image-9 {
-  background-image: url("./images/screenshots/screenshot-9.png");
-}
-
-.slider--image-10 {
-  background-image: url("./images/screenshots/screenshot-10.png");
 }
 
 /* Footer styles */
