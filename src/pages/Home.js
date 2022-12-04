@@ -9,7 +9,7 @@ import reactImg from "../images/technologies/react.png";
 
 export default function Home() {
     return (
-        <>
+        <div>
             <main className="intro--container">
                 <div className="greet-title--container">
                     <h1 className="greet"><span className="newline">Hi,</span> I am Rick</h1>
@@ -37,7 +37,7 @@ export default function Home() {
                     <img src={bootstrapImg} alt="bootstrap" width="55px" />
                 </section>
             </section>
-        </>
+        </div>
     )
 }
 

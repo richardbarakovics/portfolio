@@ -11,12 +11,12 @@ import About from "./pages/About"
 
 export default function App() {
     return (
-        <>
+        <div>
             <Nav />
             <main className="main-main">
                 <Projects />
             </main>
             <Footer />
-        </>
-    )
+        </div>
+            )
 }
