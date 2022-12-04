@@ -104,13 +104,17 @@ h6 {
 }
 
 .nav--container li {
-  color: var(--clr-bright);
   font-family: var(--ff-thin);
   text-transform: uppercase;
   list-style-type: none;
 }
 
-.nav--container li:hover {
+.nav--container li a{
+  color: var(--clr-bright);
+  text-decoration: none;
+}
+
+.nav--container li a:hover {
   cursor: pointer;
   color: white;
 }
