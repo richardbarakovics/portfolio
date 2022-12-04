@@ -1,11 +1,3 @@
-
-import bootstrapImg from "./images/technologies/bootstrap.png";
-import cssImg from "./images/technologies/css.png";
-import gitImg from "./images/technologies/git.png";
-import htmlImg from "./images/technologies/html.png";
-import javascriptImg from "./images/technologies/javascript.png";
-import reactImg from "./images/technologies/react.png";
-
 export default [
     {
         id: 1,
