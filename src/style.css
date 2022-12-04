@@ -350,12 +350,10 @@ h6 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  height: 80vh;
 }
 
 /* About page styles */
 
 .aboutme {
-  height: 80vh;
   padding: 90px;
 }
