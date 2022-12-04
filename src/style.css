@@ -81,15 +81,26 @@ h6 {
   isolation: isolate;
 }
 
+/* common style <-- this fixes the margin issue with position:fix CSS */
+.main-main {
+  margin-top: 39px;
+}
+
 /* Nav styles */
 
+.nav--container {
+  background-color: var(--bgclr-primary);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0px;
+}
 
 .nav--container ul {
   display: flex;
   justify-content: center;
   gap: 9px;
   padding: 5px;
-  background-color: var(--bgclr-primary);
 }
 
 .nav--container li {
@@ -116,7 +127,7 @@ h6 {
   padding: 90px;
 }
 
-.whoamI {
+.aboutme-text {
   padding: 90px;
   padding-top: 0px;
   text-align: justify;
@@ -273,4 +284,78 @@ h6 {
     margin-left: 150px;
     margin-right: 150px;
   }
+}
+
+/* Card styles */
+.card--container {
+  border: 1px solid rgba(0, 0, 0, 0.27);
+  margin: 10px auto;
+  display: grid;
+  gap: 10px;
+  padding: 15px;
+  width: 200px;
+  height: 320px;
+}
+
+.card--container .card--mainImg {
+  grid-row: 1;
+  margin: auto;
+}
+
+.card--container h3 {
+  grid-row: 2;
+  margin: auto;
+}
+
+.card--container h4 {
+  font-size: 0.85rem;
+  grid-row: 3;
+  margin: auto;
+}
+
+.card-technologies--container {
+  grid-row: 4;
+  margin: auto;
+
+}
+
+.card-button--container {
+  display: flex;
+  gap: 6px;
+  grid-row: 5;
+  margin: auto;
+}
+
+.card--container h4 span {
+  display: flex;
+  justify-content: center;
+}
+
+.card--button a {
+  color: black;
+  text-decoration: none;
+}
+
+.card--button {
+  background-color: #fff;
+  border: 0.6px solid black;
+  border-radius: 6%;
+  cursor: pointer;
+}
+
+
+/* Project styles */
+
+.projects--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 80vh;
+}
+
+/* About page styles */
+
+.aboutme {
+  height: 80vh;
+  padding: 90px;
 }

@@ -10,6 +10,7 @@ export default function Footer() {
                         <li>Home</li>
                         <li>Projects</li>
                         <li>About</li>
+                        {/* <li><a href="https://www.flaticon.com/free-icons/about-person" title="about person icons">About person icons created by Yogi Aprelliyanto - Flaticon</a></li> */}
                     </ul>
                 </section>
                 <div className="contact--container">

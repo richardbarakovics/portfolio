@@ -17,7 +17,7 @@ export default function Home() {
                 </div>
                 {/* <button className="intro--projects">projects</button> */}
             </main>
-            <section className="whoamI">
+            <section className="aboutme-text">
                 <h3 className="section--title">Who am I</h3>
                 <p>
                     I am a front-end developer with a passion to build UI’s that makes people want to bite into it. I am working based on my own designs. Currently, I am developing only hobby projects, while I am trying to simulate the workflow as it was a professional environment. I am also up-to-date on the latest version of the technologies I am using. I am looking forward to join a developer team where I will be able to learn more efficiently, while I could add value to the team as well.
