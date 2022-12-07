@@ -110,12 +110,21 @@ h6 {
 }
 
 .nav--container li a{
-  color: var(--clr-bright);
   text-decoration: none;
 }
 
 .nav--container li a:hover {
   cursor: pointer;
+  color: white;
+}
+
+/* it is working without defining the link class (if we style it earlier), but for more complex styling is used  */
+
+.nav--container .link{
+  color: var(--clr-bright);
+}
+
+.nav--container .active{
   color: white;
 }
 
@@ -255,7 +264,12 @@ h6 {
   font-size: 0.75rem;
 }
 
-.sitemap li:hover {
+.sitemap li a {
+  text-decoration: none;
+  color: var(--clr-bright);
+}
+
+.sitemap li a:hover {
   cursor: pointer;
   color: white;
 }

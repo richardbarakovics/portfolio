@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import profilePhoto from "../images/profile-photo.jpeg";
 
 export default function Footer() {
@@ -7,9 +8,9 @@ export default function Footer() {
             <div className="sitemap-contact--container">
                 <section className="sitemap">
                     <ul>
-                        <li>Home</li>
-                        <li>Projects</li>
-                        <li>About</li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/projects">Projects</Link></li>
+                        <li><Link to="/about">About</Link></li>
                         {/* <li><a href="https://www.flaticon.com/free-icons/about-person" title="about person icons">About person icons created by Yogi Aprelliyanto - Flaticon</a></li> */}
                     </ul>
                 </section>

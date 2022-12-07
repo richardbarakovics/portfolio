@@ -1,20 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Card(props) {
     return (
-            <div className="card--container">
-                <img src={props.image} alt="" width="100" className="card--mainImg" />
-                <h3>{props.title}</h3>
-                <h4>{props.hashtags.map(x => <span>{` #${x}`}</span>)}</h4>
+        <div className="card--container">
+            <img src={props.image} alt="" width="100" className="card--mainImg" />
+            <h3>{props.title}</h3>
+            <h4>{props.hashtags.map(x => <span>{` #${x}`}</span>)}</h4>
+            <div>{props.technologies.map(c =>
                 <img
-                    src={props.technologies[1]}
+                    src={c}
                     width="20"
                     className="card-technologies--container"
+                    alt=""
                 />
-                <div className="card-button--container">
-                    <button className="card--button"><a href={props.githubLink}>GitHub</a></button>
-                    <button className="card--button">Open</button>
-                </div>
+            )}</div>
+            <div className="card-button--container">
+                <button className="card--button"><a href={props.githubLink}>GitHub</a></button>
+                <button className="card--button"><Link to={`/projects/${props.id}`}>Open</Link></button>
             </div>
+        </div>
     )
 }
