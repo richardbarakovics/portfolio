@@ -16,7 +16,7 @@ import screenshot10 from "./images/screenshots/screenshot-10.png";
 export default class MultipleItems extends Component {
     render() {
         var settings = {
-            dots: true,
+            // dots: true,
             infinite: false,
             speed: 500,
             slidesToShow: 4,

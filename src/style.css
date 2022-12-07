@@ -100,7 +100,7 @@ h6 {
   display: flex;
   justify-content: center;
   gap: 9px;
-  padding: 5px;
+  padding: 8px;
 }
 
 .nav--container li {
@@ -109,7 +109,7 @@ h6 {
   list-style-type: none;
 }
 
-.nav--container li a{
+.nav--container li a {
   text-decoration: none;
 }
 
@@ -120,29 +120,36 @@ h6 {
 
 /* it is working without defining the link class (if we style it earlier), but for more complex styling is used  */
 
-.nav--container .link{
+.nav--container .link {
   color: var(--clr-bright);
 }
 
-.nav--container .active{
+.nav--container .active {
   color: white;
 }
 
+/* responsive */
+@media(max-width: 500px) {
+  .nav--container {
+    font-size: 1.45rem;
+  }
+}
 
 /* Home page styles */
 .intro--container {
-  background-color: white;
+  background-color: var(--bgclr-primary);
   color: var(--clr-bright);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 18px;
   padding: 90px;
+  height: 100vh;
 }
 
 .aboutme-text {
   padding: 90px;
-  padding-top: 0px;
+  padding-top: 30px;
   text-align: justify;
 }
 
@@ -150,11 +157,13 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 80%;
 }
 
 .greet {
   font-family: var(--ff-attention);
-  font-size: 70px;
+  font-size: 80px;
   background-clip: unset;
   -webkit-background-clip: text;
   background-image: linear-gradient(90deg, var(--clr-gradient-first) 0%, var(--clr-gradient-second) 30%, var(--clr-gradient-third) 95%);
@@ -228,7 +237,8 @@ h6 {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 31px;
-  background-color: #81b29a30;
+  background-color: var(--bgclr-primary);
+  color: var(--clr-bright);
 }
 
 /* Footer styles */
@@ -261,7 +271,7 @@ h6 {
 
 .sitemap ul {
   list-style-type: none;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .sitemap li a {
@@ -297,6 +307,13 @@ h6 {
   color: white;
 }
 
+/* responsive */
+/* @media(max-width: 500px) {
+  .footer--container{
+    font-size: 1.1rem;
+  }
+} */
+
 @media(min-width:850px) {
   .sitemap-contact--container {
     margin-left: 150px;
@@ -311,7 +328,7 @@ h6 {
   display: grid;
   gap: 10px;
   padding: 15px;
-  width: 200px;
+  width: 210px;
   height: 320px;
 }
 
@@ -329,12 +346,14 @@ h6 {
   font-size: 0.85rem;
   grid-row: 3;
   margin: auto;
+  font-family: var(--ff-thin);
+  ;
 }
 
 .card-technologies--container {
   grid-row: 4;
-  margin: auto;
-
+  display: flex;
+  justify-content: center;
 }
 
 .card-button--container {
@@ -342,6 +361,15 @@ h6 {
   gap: 6px;
   grid-row: 5;
   margin: auto;
+}
+
+.card--container h4 {
+  height: 62px;
+  font-family: var(--ff-thin);
+  background-clip: unset;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, var(--clr-gradient-first) 0%, var(--clr-gradient-second) 30%, var(--clr-gradient-third) 95%);
+  color: transparent;
 }
 
 .card--container h4 span {
@@ -365,13 +393,105 @@ h6 {
 /* Project styles */
 
 .projects--container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  gap: 10px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+/* singleProject page styles */
+.singleproject--container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.singleproject-image {
+  margin: auto;
+  grid-column: 1/3;
+  grid-row: 1;
+  margin-top: 30px;
+}
+
+.singleproject-title {
+  grid-column: 1/3;
+  grid-row: 2;
+  margin: auto;
+  padding: 20px;
+  font-size: 2.2em;
+}
+
+.singleproject-hashtags {
+  grid-column: 1/3;
+  grid-row: 3;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.singleproject--section {
+  grid-column: 1/3;
+  grid-row: 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.singleproject-problem--container {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.singleproject-subtitle {
+  text-align: center;
+  margin-bottom: 5px;
+  background-clip: unset;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, var(--clr-gradient-first) 0%, var(--clr-gradient-second) 30%, var(--clr-gradient-third) 95%);
+  color: transparent;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.singleproject-technologies--container {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+
+.singleproject-image--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.singleproject-button--container {
+  grid-column: 1/3;
+  grid-row: 5;
+  display: flex;
   gap: 10px;
+  justify-content: center;
+  margin: 30px;
+}
+
+.singleproject-button--container button {
+  background-color: #fff;
+  border: 0.6px solid black;
+  border-radius: 6%;
+  cursor: pointer;
+}
+
+.singleproject-button--container a {
+  text-decoration: none;
+  color: black;
 }
 
 /* About page styles */
 
 .aboutme {
-  padding: 90px;
+  padding: 30px 60px 30px 60px;
+  height: 100vh;
+}
+
+.aboutme p {
+  text-align: justify;
 }

@@ -8,6 +8,8 @@ import Projects from "./pages/Projects"
 import About from "./pages/About"
 import SharedLayout from "./pages/SharedLayout";
 import SingleProject from "./pages/SingleProject";
+import SharedProjectLayout from "./pages/SharedProjectLayout";
+
 
 
 export default function App() {
@@ -17,9 +19,12 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<SharedLayout />} >
                         <Route index element={<Home />} />
-                        <Route path="projects" element={<Projects />} />
                         <Route path="about" element={<About />} />
-                        <Route path="projects/:projectId" element={<SingleProject />} />
+                        <Route path="/projects" element={<SharedProjectLayout />}>
+                            <Route index element={<Projects />} />
+                            <Route path=":projectId" element={<SingleProject />} />
+                        </Route>
+
                         <Route path="*" element={<h1>404 page not found</h1>} />
                     </Route>
                 </Routes>

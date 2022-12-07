@@ -7,11 +7,12 @@ export default function Card(props) {
             <img src={props.image} alt="" width="100" className="card--mainImg" />
             <h3>{props.title}</h3>
             <h4>{props.hashtags.map(x => <span>{` #${x}`}</span>)}</h4>
-            <div>{props.technologies.map(c =>
+            <div className="card-technologies--container">{props.technologies.map(c =>
                 <img
                     src={c}
                     width="20"
-                    className="card-technologies--container"
+                    height="20"
+                    className="card-technologies"
                     alt=""
                 />
             )}</div>
